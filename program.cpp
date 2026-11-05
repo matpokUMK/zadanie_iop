@@ -15,7 +15,13 @@ int main() {
 	int n;
 
 	scanf("%d", &n);
-	printf("%d", silnia(n));
+
+	if (n < 0) {
+		printf("BLAD - Wpisano liczbe ujemna!\n");
+		return 1;
+	}
+
+	printf("%d\n", silnia(n));
 
 	return 0;
 }
